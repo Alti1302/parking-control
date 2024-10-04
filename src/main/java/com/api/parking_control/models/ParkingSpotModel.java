@@ -1,11 +1,15 @@
 package com.api.parking_control.models;
 import jakarta.persistence.*;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
+@Entity
+@Table(name = "TB_PARKING_SPOT")
 public class ParkingSpotModel implements Serializable {
+
     private static final long serialVersionUID = 1L;
 
     @Id
